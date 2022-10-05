@@ -80,6 +80,22 @@ section {
   color: var(--text-dark);
 }
 
+.dropdown-menu {
+  left: -50px !important;
+  -webkit-box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  border: 4px;
+}
+
+.active-mode::before {
+  content: "\F633";
+  color: #2b67ff;
+  padding-left: 5px;
+}
+
 .bi-book-half {
   color: var(--red-logo) !important;
 }
@@ -122,9 +138,10 @@ section {
 }
 
 .price {
+  font-size: 12px;
   background: var(--bg-indigo);
   color: var(--text-white);
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -157,6 +174,21 @@ section {
   color: var(--text-white);
 }
 
+footer {
+  background: #000;
+  font-size: 12px;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.private {
+  color: #fff;
+}
+
 /* Element */
 .avatar {
   width: 150px;
@@ -169,6 +201,9 @@ section {
     width: 120px;
     border-radius: 1000px;
     margin-bottom: 15px;
+  }
+  .dropdown-menu {
+    margin-left: -60px !important;
   }
 }
 

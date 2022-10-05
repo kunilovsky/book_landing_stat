@@ -51,6 +51,15 @@ section
         color: var(--text-dark)
 .navbar-brand
     color: var(--text-dark)
+.dropdown-menu
+    left: -50px !important
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2)
+.dropdown-item
+    border: 4px
+.active-mode::before
+    content: "\F633"
+    color: #2b67ff
+    padding-left: 5px
 .bi-book-half
     color: var(--red-logo) !important
 .btn-mode
@@ -77,6 +86,8 @@ section
         width: 120px
         border-radius: 1000px
         margin-bottom: 15px
+    .dropdown-menu
+        margin-left: -60px !important
 .book
     &__head img
         height: 250px
