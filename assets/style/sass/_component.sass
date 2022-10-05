@@ -1,10 +1,33 @@
-.container
+.blocks
     background-color: var(--bg-white)
     border-radius: 20px
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1)
+    padding: 40px 20px
+    margin-top: 10px
     &__header
         border-radius: 0 0 20px 20px
         background-color: var(--bg-white)
+.price
+    background: var(--bg-indigo)
+    color: var(--text-white)
+    padding: 10px 20px
+    border-radius: 10px
+    margin-right: 10px
+    margin-bottom: 10px
+.price a
+    text-decoration: none
+    color: var(--text-white)
+@media (max-width:480px)
+    h1
+        font-size: 25px
+        font-weight: 700
+    section
+        margin-left: 10px
+        margin-right: 10px
+    p
+        font-size: 12px
+    .price
+        font-size: 14px
 .btn
-    background-color: var(--bg-indigo)
+    background: var(--bg-indigo)
     color: var(--text-white)

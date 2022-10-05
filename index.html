@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script>
@@ -21,7 +20,7 @@
     <!-- Header -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg p-0">
-            <div class="container container__header p-3">
+            <div class="container blocks__header p-3">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile"
                     aria-controls="mobile" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,30 +29,30 @@
                     <i class="bi bi-book-half"></i>
                     Novakamskaya
                 </a>
-                <div class="collapse navbar-collapse" id="mobile">
-                    <ul class="navbar-nav me-auto ms-auto text-center mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">О нас</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Наши книги</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Отзывы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="dropdown">
-                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Смена темы
+                    <button class="btn btn-mode" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i id="mode" class="bi bi-brightness-high-fill"></i>
                     </button>
                     <ul class="dropdown-menu">
                         <li><a id="light-theme" class="dropdown-item" href="#">Светлая тема</a></li>
                         <li><a id="dark-theme" class="dropdown-item" href="#">Темная тема</a></li>
                         <li><a id="user-theme" class="dropdown-item" href="#">Как в системе</a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="mobile">
+                    <ul class="navbar-nav me-auto ms-auto text-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#books">Наши книги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rev">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакты</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -62,11 +61,791 @@
     <!-- /Header -->
     <!-- Main -->
     <main>
-        <section>
+        <section id="about">
+            <h2>
+                О нас
+            </h2>
+            <div class="container blocks">
+                <div class="row align-items-center m-0">
+                    <div class="col-lg-4 d-flex text-center justify-content-evenly">
+                        <div>
+                            <img class="avatar" src="assets/img/woman-1.jpeg" alt="Екатерина Нóвак">
+                            <h6>
+                                Екатерина Нóвак
+                            </h6>
+                        </div>
+                        <div>
+                            <img class="avatar" src="assets/img/woman-2.jpg" alt="Анна Кáмская">
+                            <h6>
+                                Анна Кáмская
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 p-3 p-lg-0">
+                        <p>
+                            Всем привет! Это сайт двух соавторов - Екатерины Новак и Анны Камской. Наше самое
+                            любимое хобби - писательство. Пишем с детства, но доводить дело до конца научились
+                            только в соавторстве. Не передать, насколько это чудесный дар - вершить чужие
+                            судьбы.
+                        </p>
+                        <p>
+                            Мы искренне надеемся, что вы провели не один час с нашими героями вовсе не зря.
+                            Спасибо, дорогие читатели, за то, что вы с нами. Заставить людей чувствовать и
+                            сопереживать - великое умение. Но благодаря вам и им, обожаемым героям, каждый наш
+                            день проходит не зря.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="books">
+            <h2>
+                Наши книги
+            </h2>
             <div class="container">
-                <h1>test</h1>
-                <p>text</p>
-                <button class="btn">test</button>
+                <div class="row">
+                    <div class="col-lg-6 p-0 p-lg-2">
+                        <div class="book blocks">
+                            <div class="book__head text-center">
+                                <img src="assets/img/book-1.png"
+                                    alt="Обложка книги Дилетантки. Проклятье Черной Мадонны">
+                            </div>
+                            <div class="book__body">
+                                <h1>
+                                    Дилетантки. Проклятье Черной Мадонны
+                                </h1>
+                                <div class="book__body__avtor">
+                                    Авторы:
+                                    <a href="https://www.litres.ru/author/ekaterina-novak/" target="_blank">Екатерина
+                                        Новак</a>
+                                    <a href="https://www.litres.ru/author/anna-kamskaya/" target="_blank">Анна
+                                        Камская</a>
+                                </div>
+                                <hr>
+                                <div class="book__body__description">
+                                    <p>Александра Покровская приезжает к жениху в Италию и узнает, что скоропостижно
+                                        ушли из жизни его мать и сестра. Мишель Ринальди, кузина жениха, считает, их
+                                        погубила древняя икона Черной Мадонны, которая хранилась в семье много веков и
+                                        внезапно пропала. Александра верит, что в этом замешаны люди. Девушки, вопреки
+                                        желаниям полиции, начинают собственное расследование
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="book__footer">
+                                <div class="d-flex">
+                                    <p>
+                                        <strong>
+                                            Объем:
+                                        </strong>
+                                        250
+                                        <span>
+                                            стр.
+                                        </span>
+                                    </p>
+                                    <p class="ms-2">
+                                        <strong>
+                                            Возрастное ограничение:
+                                        </strong>
+                                        18+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="price">
+                                        160 <span>₽</span>
+                                        <a href="https://www.litres.ru/anna-kamskaya/diletantki-proklyate-chernoy-madonny/chitat-onlayn/"
+                                            target="_blank">ЛитРес</a>
+                                    </div>
+                                    <div class="price">
+                                        120 <span>₽</span>
+                                        <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
+                                            target="_blank">Букривер</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://litmarket.ru/books/diletantki-proklyate-chernoy-madonny"
+                                            target="_blank">Литмаркет</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://feisovet.ru/магазин/Дилетантки-Проклятье-Черной-Мадонны-Екатерина-Новак-Анна-Камская"
+                                            target="_blank">Призрачные миры</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0 p-lg-2">
+                        <div class="book blocks">
+                            <div class="book__head text-center">
+                                <img src="assets/img/book-1.png"
+                                    alt="Обложка книги Дилетантки. Проклятье Черной Мадонны">
+                            </div>
+                            <div class="book__body">
+                                <h1>
+                                    Дилетантки. Проклятье Черной Мадонны
+                                </h1>
+                                <div class="book__body__avtor">
+                                    Авторы:
+                                    <a href="https://www.litres.ru/author/ekaterina-novak/" target="_blank">Екатерина
+                                        Новак</a>
+                                    <a href="https://www.litres.ru/author/anna-kamskaya/" target="_blank">Анна
+                                        Камская</a>
+                                </div>
+                                <hr>
+                                <div class="book__body__description">
+                                    <p>Александра Покровская приезжает к жениху в Италию и узнает, что скоропостижно
+                                        ушли из жизни его мать и сестра. Мишель Ринальди, кузина жениха, считает, их
+                                        погубила древняя икона Черной Мадонны, которая хранилась в семье много веков и
+                                        внезапно пропала. Александра верит, что в этом замешаны люди. Девушки, вопреки
+                                        желаниям полиции, начинают собственное расследование
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="book__footer">
+                                <div class="d-flex">
+                                    <p>
+                                        <strong>
+                                            Объем:
+                                        </strong>
+                                        250
+                                        <span>
+                                            стр.
+                                        </span>
+                                    </p>
+                                    <p class="ms-2">
+                                        <strong>
+                                            Возрастное ограничение:
+                                        </strong>
+                                        18+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="price">
+                                        160 <span>₽</span>
+                                        <a href="https://www.litres.ru/anna-kamskaya/diletantki-proklyate-chernoy-madonny/chitat-onlayn/"
+                                            target="_blank">ЛитРес</a>
+                                    </div>
+                                    <div class="price">
+                                        120 <span>₽</span>
+                                        <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
+                                            target="_blank">Букривер</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://litmarket.ru/books/diletantki-proklyate-chernoy-madonny"
+                                            target="_blank">Литмаркет</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://feisovet.ru/магазин/Дилетантки-Проклятье-Черной-Мадонны-Екатерина-Новак-Анна-Камская"
+                                            target="_blank">Призрачные миры</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0 p-lg-2">
+                        <div class="book blocks">
+                            <div class="book__head text-center">
+                                <img src="assets/img/book-1.png"
+                                    alt="Обложка книги Дилетантки. Проклятье Черной Мадонны">
+                            </div>
+                            <div class="book__body">
+                                <h1>
+                                    Дилетантки. Проклятье Черной Мадонны
+                                </h1>
+                                <div class="book__body__avtor">
+                                    Авторы:
+                                    <a href="https://www.litres.ru/author/ekaterina-novak/" target="_blank">Екатерина
+                                        Новак</a>
+                                    <a href="https://www.litres.ru/author/anna-kamskaya/" target="_blank">Анна
+                                        Камская</a>
+                                </div>
+                                <hr>
+                                <div class="book__body__description">
+                                    <p>Александра Покровская приезжает к жениху в Италию и узнает, что скоропостижно
+                                        ушли из жизни его мать и сестра. Мишель Ринальди, кузина жениха, считает, их
+                                        погубила древняя икона Черной Мадонны, которая хранилась в семье много веков и
+                                        внезапно пропала. Александра верит, что в этом замешаны люди. Девушки, вопреки
+                                        желаниям полиции, начинают собственное расследование
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="book__footer">
+                                <div class="d-flex">
+                                    <p>
+                                        <strong>
+                                            Объем:
+                                        </strong>
+                                        250
+                                        <span>
+                                            стр.
+                                        </span>
+                                    </p>
+                                    <p class="ms-2">
+                                        <strong>
+                                            Возрастное ограничение:
+                                        </strong>
+                                        18+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="price">
+                                        160 <span>₽</span>
+                                        <a href="https://www.litres.ru/anna-kamskaya/diletantki-proklyate-chernoy-madonny/chitat-onlayn/"
+                                            target="_blank">ЛитРес</a>
+                                    </div>
+                                    <div class="price">
+                                        120 <span>₽</span>
+                                        <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
+                                            target="_blank">Букривер</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://litmarket.ru/books/diletantki-proklyate-chernoy-madonny"
+                                            target="_blank">Литмаркет</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://feisovet.ru/магазин/Дилетантки-Проклятье-Черной-Мадонны-Екатерина-Новак-Анна-Камская"
+                                            target="_blank">Призрачные миры</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0 p-lg-2">
+                        <div class="book blocks">
+                            <div class="book__head text-center">
+                                <img src="assets/img/book-1.png"
+                                    alt="Обложка книги Дилетантки. Проклятье Черной Мадонны">
+                            </div>
+                            <div class="book__body">
+                                <h1>
+                                    Дилетантки. Проклятье Черной Мадонны
+                                </h1>
+                                <div class="book__body__avtor">
+                                    Авторы:
+                                    <a href="https://www.litres.ru/author/ekaterina-novak/" target="_blank">Екатерина
+                                        Новак</a>
+                                    <a href="https://www.litres.ru/author/anna-kamskaya/" target="_blank">Анна
+                                        Камская</a>
+                                </div>
+                                <hr>
+                                <div class="book__body__description">
+                                    <p>Александра Покровская приезжает к жениху в Италию и узнает, что скоропостижно
+                                        ушли из жизни его мать и сестра. Мишель Ринальди, кузина жениха, считает, их
+                                        погубила древняя икона Черной Мадонны, которая хранилась в семье много веков и
+                                        внезапно пропала. Александра верит, что в этом замешаны люди. Девушки, вопреки
+                                        желаниям полиции, начинают собственное расследование
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="book__footer">
+                                <div class="d-flex">
+                                    <p>
+                                        <strong>
+                                            Объем:
+                                        </strong>
+                                        250
+                                        <span>
+                                            стр.
+                                        </span>
+                                    </p>
+                                    <p class="ms-2">
+                                        <strong>
+                                            Возрастное ограничение:
+                                        </strong>
+                                        18+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="price">
+                                        160 <span>₽</span>
+                                        <a href="https://www.litres.ru/anna-kamskaya/diletantki-proklyate-chernoy-madonny/chitat-onlayn/"
+                                            target="_blank">ЛитРес</a>
+                                    </div>
+                                    <div class="price">
+                                        120 <span>₽</span>
+                                        <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
+                                            target="_blank">Букривер</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://litmarket.ru/books/diletantki-proklyate-chernoy-madonny"
+                                            target="_blank">Литмаркет</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://feisovet.ru/магазин/Дилетантки-Проклятье-Черной-Мадонны-Екатерина-Новак-Анна-Камская"
+                                            target="_blank">Призрачные миры</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0 p-lg-2">
+                        <div class="book blocks">
+                            <div class="book__head text-center">
+                                <img src="assets/img/book-1.png"
+                                    alt="Обложка книги Дилетантки. Проклятье Черной Мадонны">
+                            </div>
+                            <div class="book__body">
+                                <h1>
+                                    Дилетантки. Проклятье Черной Мадонны
+                                </h1>
+                                <div class="book__body__avtor">
+                                    Авторы:
+                                    <a href="https://www.litres.ru/author/ekaterina-novak/" target="_blank">Екатерина
+                                        Новак</a>
+                                    <a href="https://www.litres.ru/author/anna-kamskaya/" target="_blank">Анна
+                                        Камская</a>
+                                </div>
+                                <hr>
+                                <div class="book__body__description">
+                                    <p>Александра Покровская приезжает к жениху в Италию и узнает, что скоропостижно
+                                        ушли из жизни его мать и сестра. Мишель Ринальди, кузина жениха, считает, их
+                                        погубила древняя икона Черной Мадонны, которая хранилась в семье много веков и
+                                        внезапно пропала. Александра верит, что в этом замешаны люди. Девушки, вопреки
+                                        желаниям полиции, начинают собственное расследование
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="book__footer">
+                                <div class="d-flex">
+                                    <p>
+                                        <strong>
+                                            Объем:
+                                        </strong>
+                                        250
+                                        <span>
+                                            стр.
+                                        </span>
+                                    </p>
+                                    <p class="ms-2">
+                                        <strong>
+                                            Возрастное ограничение:
+                                        </strong>
+                                        18+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="price">
+                                        160 <span>₽</span>
+                                        <a href="https://www.litres.ru/anna-kamskaya/diletantki-proklyate-chernoy-madonny/chitat-onlayn/"
+                                            target="_blank">ЛитРес</a>
+                                    </div>
+                                    <div class="price">
+                                        120 <span>₽</span>
+                                        <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
+                                            target="_blank">Букривер</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://litmarket.ru/books/diletantki-proklyate-chernoy-madonny"
+                                            target="_blank">Литмаркет</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://feisovet.ru/магазин/Дилетантки-Проклятье-Черной-Мадонны-Екатерина-Новак-Анна-Камская"
+                                            target="_blank">Призрачные миры</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0 p-lg-2">
+                        <div class="book blocks">
+                            <div class="book__head text-center">
+                                <img src="assets/img/book-1.png"
+                                    alt="Обложка книги Дилетантки. Проклятье Черной Мадонны">
+                            </div>
+                            <div class="book__body">
+                                <h1>
+                                    Дилетантки. Проклятье Черной Мадонны
+                                </h1>
+                                <div class="book__body__avtor">
+                                    Авторы:
+                                    <a href="https://www.litres.ru/author/ekaterina-novak/" target="_blank">Екатерина
+                                        Новак</a>
+                                    <a href="https://www.litres.ru/author/anna-kamskaya/" target="_blank">Анна
+                                        Камская</a>
+                                </div>
+                                <hr>
+                                <div class="book__body__description">
+                                    <p>Александра Покровская приезжает к жениху в Италию и узнает, что скоропостижно
+                                        ушли из жизни его мать и сестра. Мишель Ринальди, кузина жениха, считает, их
+                                        погубила древняя икона Черной Мадонны, которая хранилась в семье много веков и
+                                        внезапно пропала. Александра верит, что в этом замешаны люди. Девушки, вопреки
+                                        желаниям полиции, начинают собственное расследование
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="book__footer">
+                                <div class="d-flex">
+                                    <p>
+                                        <strong>
+                                            Объем:
+                                        </strong>
+                                        250
+                                        <span>
+                                            стр.
+                                        </span>
+                                    </p>
+                                    <p class="ms-2">
+                                        <strong>
+                                            Возрастное ограничение:
+                                        </strong>
+                                        18+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="price">
+                                        160 <span>₽</span>
+                                        <a href="https://www.litres.ru/anna-kamskaya/diletantki-proklyate-chernoy-madonny/chitat-onlayn/"
+                                            target="_blank">ЛитРес</a>
+                                    </div>
+                                    <div class="price">
+                                        120 <span>₽</span>
+                                        <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
+                                            target="_blank">Букривер</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://litmarket.ru/books/diletantki-proklyate-chernoy-madonny"
+                                            target="_blank">Литмаркет</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://feisovet.ru/магазин/Дилетантки-Проклятье-Черной-Мадонны-Екатерина-Новак-Анна-Камская"
+                                            target="_blank">Призрачные миры</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0 p-lg-2">
+                        <div class="book blocks">
+                            <div class="book__head text-center">
+                                <img src="assets/img/book-1.png"
+                                    alt="Обложка книги Дилетантки. Проклятье Черной Мадонны">
+                            </div>
+                            <div class="book__body">
+                                <h1>
+                                    Дилетантки. Проклятье Черной Мадонны
+                                </h1>
+                                <div class="book__body__avtor">
+                                    Авторы:
+                                    <a href="https://www.litres.ru/author/ekaterina-novak/" target="_blank">Екатерина
+                                        Новак</a>
+                                    <a href="https://www.litres.ru/author/anna-kamskaya/" target="_blank">Анна
+                                        Камская</a>
+                                </div>
+                                <hr>
+                                <div class="book__body__description">
+                                    <p>Александра Покровская приезжает к жениху в Италию и узнает, что скоропостижно
+                                        ушли из жизни его мать и сестра. Мишель Ринальди, кузина жениха, считает, их
+                                        погубила древняя икона Черной Мадонны, которая хранилась в семье много веков и
+                                        внезапно пропала. Александра верит, что в этом замешаны люди. Девушки, вопреки
+                                        желаниям полиции, начинают собственное расследование
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="book__footer">
+                                <div class="d-flex">
+                                    <p>
+                                        <strong>
+                                            Объем:
+                                        </strong>
+                                        250
+                                        <span>
+                                            стр.
+                                        </span>
+                                    </p>
+                                    <p class="ms-2">
+                                        <strong>
+                                            Возрастное ограничение:
+                                        </strong>
+                                        18+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="price">
+                                        160 <span>₽</span>
+                                        <a href="https://www.litres.ru/anna-kamskaya/diletantki-proklyate-chernoy-madonny/chitat-onlayn/"
+                                            target="_blank">ЛитРес</a>
+                                    </div>
+                                    <div class="price">
+                                        120 <span>₽</span>
+                                        <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
+                                            target="_blank">Букривер</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://litmarket.ru/books/diletantki-proklyate-chernoy-madonny"
+                                            target="_blank">Литмаркет</a>
+                                    </div>
+                                    <div class="price">
+                                        100 <span>₽</span>
+                                        <a href="https://feisovet.ru/магазин/Дилетантки-Проклятье-Черной-Мадонны-Екатерина-Новак-Анна-Камская"
+                                            target="_blank">Призрачные миры</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="rev">
+            <h2>
+                Отзывы
+            </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pt-3">
+                        <div class="rev d-flex blocks">
+                            <div class="rev__img text-center me-4">
+                                <img src="assets/img/rev1.jpg" alt="user foto">
+                                <h6>
+                                    Алеся Четверикова
+                                </h6>
+                                <a href="https://vk.com/club212369562" target="_blank">Вконтакте</a>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Авторы настолько умело прописали детективную линию, что догадаться,
+                                    "кто и зачем", невозможно!
+
+                                    А когда узнаете, возникнет вопрос "как можно так писать книги?" Легко,
+                                    но глубоко. С юмором, но заставляя нервничать.
+
+                                    Переплетая детектив
+                                    с любовью, но с ноткой горечи утраты…
+
+                                    Здесь скрыт настоящий писательский талант: влиять на людей через свои книги. Читать
+                                    обязательно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3">
+                        <div class="rev d-flex blocks">
+                            <div class="rev__img text-center me-4">
+                                <img src="assets/img/rev1.jpg" alt="user foto">
+                                <h6>
+                                    Алеся Четверикова
+                                </h6>
+                                <a href="https://vk.com/club212369562" target="_blank">Вконтакте</a>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Авторы настолько умело прописали детективную линию, что догадаться,
+                                    "кто и зачем", невозможно!
+
+                                    А когда узнаете, возникнет вопрос "как можно так писать книги?" Легко,
+                                    но глубоко. С юмором, но заставляя нервничать.
+
+                                    Переплетая детектив
+                                    с любовью, но с ноткой горечи утраты…
+
+                                    Здесь скрыт настоящий писательский талант: влиять на людей через свои книги. Читать
+                                    обязательно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3">
+                        <div class="rev d-flex blocks">
+                            <div class="rev__img text-center me-4">
+                                <img src="assets/img/rev1.jpg" alt="user foto">
+                                <h6>
+                                    Алеся Четверикова
+                                </h6>
+                                <a href="https://vk.com/club212369562" target="_blank">Вконтакте</a>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Авторы настолько умело прописали детективную линию, что догадаться,
+                                    "кто и зачем", невозможно!
+
+                                    А когда узнаете, возникнет вопрос "как можно так писать книги?" Легко,
+                                    но глубоко. С юмором, но заставляя нервничать.
+
+                                    Переплетая детектив
+                                    с любовью, но с ноткой горечи утраты…
+
+                                    Здесь скрыт настоящий писательский талант: влиять на людей через свои книги. Читать
+                                    обязательно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3">
+                        <div class="rev d-flex blocks">
+                            <div class="rev__img text-center me-4">
+                                <img src="assets/img/rev1.jpg" alt="user foto">
+                                <h6>
+                                    Алеся Четверикова
+                                </h6>
+                                <a href="https://vk.com/club212369562" target="_blank">Вконтакте</a>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Авторы настолько умело прописали детективную линию, что догадаться,
+                                    "кто и зачем", невозможно!
+
+                                    А когда узнаете, возникнет вопрос "как можно так писать книги?" Легко,
+                                    но глубоко. С юмором, но заставляя нервничать.
+
+                                    Переплетая детектив
+                                    с любовью, но с ноткой горечи утраты…
+
+                                    Здесь скрыт настоящий писательский талант: влиять на людей через свои книги. Читать
+                                    обязательно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3">
+                        <div class="rev d-flex blocks">
+                            <div class="rev__img text-center me-4">
+                                <img src="assets/img/rev1.jpg" alt="user foto">
+                                <h6>
+                                    Алеся Четверикова
+                                </h6>
+                                <a href="https://vk.com/club212369562" target="_blank">Вконтакте</a>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Авторы настолько умело прописали детективную линию, что догадаться,
+                                    "кто и зачем", невозможно!
+
+                                    А когда узнаете, возникнет вопрос "как можно так писать книги?" Легко,
+                                    но глубоко. С юмором, но заставляя нервничать.
+
+                                    Переплетая детектив
+                                    с любовью, но с ноткой горечи утраты…
+
+                                    Здесь скрыт настоящий писательский талант: влиять на людей через свои книги. Читать
+                                    обязательно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3">
+                        <div class="rev d-flex blocks">
+                            <div class="rev__img text-center me-4">
+                                <img src="assets/img/rev1.jpg" alt="user foto">
+                                <h6>
+                                    Алеся Четверикова
+                                </h6>
+                                <a href="https://vk.com/club212369562" target="_blank">Вконтакте</a>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Авторы настолько умело прописали детективную линию, что догадаться,
+                                    "кто и зачем", невозможно!
+
+                                    А когда узнаете, возникнет вопрос "как можно так писать книги?" Легко,
+                                    но глубоко. С юмором, но заставляя нервничать.
+
+                                    Переплетая детектив
+                                    с любовью, но с ноткой горечи утраты…
+
+                                    Здесь скрыт настоящий писательский талант: влиять на людей через свои книги. Читать
+                                    обязательно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3">
+                        <div class="rev d-flex blocks">
+                            <div class="rev__img text-center me-4">
+                                <img src="assets/img/rev1.jpg" alt="user foto">
+                                <h6>
+                                    Алеся Четверикова
+                                </h6>
+                                <a href="https://vk.com/club212369562" target="_blank">Вконтакте</a>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Авторы настолько умело прописали детективную линию, что догадаться,
+                                    "кто и зачем", невозможно!
+
+                                    А когда узнаете, возникнет вопрос "как можно так писать книги?" Легко,
+                                    но глубоко. С юмором, но заставляя нервничать.
+
+                                    Переплетая детектив
+                                    с любовью, но с ноткой горечи утраты…
+
+                                    Здесь скрыт настоящий писательский талант: влиять на людей через свои книги. Читать
+                                    обязательно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3">
+                        <div class="rev d-flex blocks">
+                            <div class="rev__img text-center me-4">
+                                <img src="assets/img/rev1.jpg" alt="user foto">
+                                <h6>
+                                    Алеся Четверикова
+                                </h6>
+                                <a href="https://vk.com/club212369562" target="_blank">Вконтакте</a>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Авторы настолько умело прописали детективную линию, что догадаться,
+                                    "кто и зачем", невозможно!
+
+                                    А когда узнаете, возникнет вопрос "как можно так писать книги?" Легко,
+                                    но глубоко. С юмором, но заставляя нервничать.
+
+                                    Переплетая детектив
+                                    с любовью, но с ноткой горечи утраты…
+
+                                    Здесь скрыт настоящий писательский талант: влиять на людей через свои книги. Читать
+                                    обязательно!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>
+                Контакты
+            </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="blocks contact text-center">
+                            <a href="https://t.me/novakamskaya"><i class="bi bi-telegram"></i> Новости</a>
+                            <a href="https://t.me/novakamskaya_chat"><i class="bi bi-telegram"></i> Чат</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blocks contact text-center">
+                            <a href="mailto:novakamskaya@ya.ru"><i class="bi bi-envelope"></i>novakamskaya@ya.ru
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blocks contact text-center">
+                            <a href="https://vk.com/novakamskaya"><i class="bi bi-vimeo"></i>Вконтакте
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blocks contact text-center">
+                            <a href="https://www.youtube.com/channel/UCMAvajjZ3wDnzjOEMIRKOPw"><i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
