@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script>
+        localStorage.setItem('theme', 'dark');
+        localStorage.getItem('theme');
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container container__header p-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile"
+                    aria-controls="mobile" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-book-half"></i>
+                    Novakamskaya
+                </a>
+                <div class="collapse navbar-collapse" id="mobile">
+                    <ul class="navbar-nav me-auto ms-auto text-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Наши книги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Смена темы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a id="light-theme" class="dropdown-item" href="#">Светлая тема</a></li>
+                        <li><a id="dark-theme" class="dropdown-item" href="#">Темная тема</a></li>
+                        <li><a id="user-theme" class="dropdown-item" href="#">Как в системе</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /Header -->
+    <!-- Main -->
+    <main>
+        <section>
+            <div class="container">
+                <h1>test</h1>
+                <p>text</p>
+                <button class="btn">test</button>
+            </div>
+        </section>
+    </main>
+    <!-- /Main -->
+    <!-- JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/mode.js"></script>
+</body>
+
+</html>

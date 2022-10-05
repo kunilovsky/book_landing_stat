@@ -1,0 +1,26 @@
+body
+    font-family: 'Montserrat', sans-serif
+@import 'colors'
+/* Global */
+body
+    --text-white: #{$white}
+    --text-dark: #{$dark}
+    --bg-grey-light: #{$grey-light}
+    --bg-white: #{$bg-white}
+    --bg-blue-dark: #{$blue-dark}
+    --bg-indigo: #{$bg-indigo}
+    background-color: var(--bg-grey-light)
+.dark 
+    --text-white: #{$dark_mode-text-white}
+    --text-dark: #{$dark_mode-text-dark}
+    --bg-grey-light: #{$dark_mode-bg-grey-light}
+    --bg-white: #{$dark_mode-bg-white}
+    --bg-blue-dark: #{$dark_mode-blue-dark}
+    --bg-indigo: #{$dark_mode-bg-indigo}
+
+h1, h2, h3, h4, h5, h6, p
+    color: var(--text-dark)
+/* Component */
+@import 'component'
+h2
+    color: $dark
