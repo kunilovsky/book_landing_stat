@@ -15,7 +15,7 @@ body {
   --bg-grey-light: #f5f5f5;
   --bg-white: #fff;
   --bg-blue-dark: #142136;
-  --bg-indigo: #6371f1;
+  --bg-indigo: #c8cdfe;
   --red-logo: #d72f2f;
   background-color: var(--bg-grey-light);
 }
@@ -27,7 +27,7 @@ body {
   --bg-grey-light: #142136;
   --bg-white: #22395d;
   --bg-blue-dark: #142136;
-  --bg-indigo: #7577e1;
+  --bg-indigo: #9293d6;
   --rel-logo-dark: #e15555;
 }
 
@@ -154,7 +154,7 @@ section {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
   }
   section {
@@ -187,6 +187,96 @@ footer {
 
 .private {
   color: #fff;
+}
+
+/* NEW BOOK CARD */
+.book-card-price p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.accordion-button {
+  font-size: 14px;
+}
+
+.shop-logo {
+  width: 60px;
+  height: auto;
+  max-height: 25px;
+  margin-right: 10px;
+}
+
+.book-card-img {
+  width: 25%;
+}
+
+.book-card-img img {
+  width: 100%;
+}
+
+.book-card-description {
+  color: var(--text-dark);
+  width: 75%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.book-card-meta {
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
+.book-card-meta span {
+  margin-right: 15px;
+}
+
+.book-card-price a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: var(--bg-indigo);
+  color: var(--text-dark);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--text-white);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .book-card-price p {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .book-card-img {
+    text-align: center;
+    width: 100%;
+  }
+  .book-card-img img {
+    width: 80%;
+  }
+  .book-card-description {
+    width: 100%;
+    font-size: 14px;
+  }
+  .book-card-meta {
+    font-size: 10px;
+  }
+  .book-card-price a {
+    font-size: 12px;
+  }
+}
+
+.accordion-button::after {
+  margin-left: 10px;
 }
 
 /* Element */
