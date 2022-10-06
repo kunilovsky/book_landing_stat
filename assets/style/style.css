@@ -262,6 +262,21 @@ footer {
           box-shadow: none;
 }
 
+.accordion-item {
+  background: var(--text-white) !important;
+}
+
+.accordion-button {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.accordion-flush {
+  background: var(--text-white) !important;
+  background-color: var(--text-white) !important;
+}
+
 @media (max-width: 480px) {
   .book-card-price p {
     font-size: 14px;
