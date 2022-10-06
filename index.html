@@ -37,14 +37,24 @@
                     Novakamskaya
                 </a>
                 <div class="dropdown">
-                    <button class="btn btn-mode" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i id="mode" class="bi bi-brightness-high-fill"></i>
+                    <button id="mode" class="btn btn-mode bi-brightness-high-fill-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-moon-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                            <path
+                                d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                        </svg>
+                        </svg>
                     </button>
-                    <ul class="dropdown-menu text-center">
-                        <strong style="font-size: 12px;">Внешний вид</strong>
-                        <li><a id="light-theme" class="dropdown-item bi active-mode" style="font-size: 14px; href="
+                    <!-- <button class="btn btn-mode" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i id="mode" class="bi bi-brightness-high-fill"></i>
+                    </button> -->
+                    <ul id="drop-black" class="dropdown-menu text-start">
+                        <div class="text-center"><strong style="font-size: 12px;text-align: center;">Внешний вид</strong></div>
+                        <li><a id="light-theme" class="dropdown-item bi active-mode" style="font-size: 14px;" href="
                                 #">Светлая тема</a></li>
-                        <li><a id="dark-theme" class="dropdown-item bi" style="font-size: 14px; href=" #">Темная
+                        <li><a id="dark-theme" class="dropdown-item bi" style="font-size:14px;" href="#">Темная
                                 тема</a></li>
                         <li><a id="user-theme" class="dropdown-item bi" style="font-size: 14px;" href="#">Как в
                                 системе</a></li>
@@ -197,13 +207,13 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header pt-2 pb-0" id="b-1">
                                             <button class="accordion-button collapsed p-0 text-end" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#open-1"
-                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                data-bs-toggle="collapse" data-bs-target="#open-1" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
                                                 Еще варианты
                                             </button>
                                         </h2>
-                                        <div id="open-1" class="accordion-collapse collapse"
-                                            aria-labelledby="b-1" data-bs-parent="#add-3">
+                                        <div id="open-1" class="accordion-collapse collapse" aria-labelledby="b-1"
+                                            data-bs-parent="#add-3">
                                             <div class="accordion-body p-0">
                                                 <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
                                                     target="_blank">
@@ -344,8 +354,8 @@
                                                 Еще варианты
                                             </button>
                                         </h2>
-                                        <div id="open-2open-3" class="accordion-collapse collapse"
-                                            aria-labelledby="b-2" data-bs-parent="#add-1">
+                                        <div id="open-2open-3" class="accordion-collapse collapse" aria-labelledby="b-2"
+                                            data-bs-parent="#add-1">
                                             <div class="accordion-body p-0">
                                                 <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
                                                     target="_blank">
@@ -481,13 +491,13 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header pt-2 pb-0" id="b-3">
                                             <button class="accordion-button collapsed p-0 text-end" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#open-3"
-                                                aria-expanded="false" aria-controls="open-3">
+                                                data-bs-toggle="collapse" data-bs-target="#open-3" aria-expanded="false"
+                                                aria-controls="open-3">
                                                 Еще варианты
                                             </button>
                                         </h2>
-                                        <div id="open-3" class="accordion-collapse collapse"
-                                            aria-labelledby="b-3" data-bs-parent="#add-2">
+                                        <div id="open-3" class="accordion-collapse collapse" aria-labelledby="b-3"
+                                            data-bs-parent="#add-2">
                                             <div class="accordion-body p-0">
                                                 <a href="https://bookriver.ru/book/novakamskaya-diletantki-proklyate-chernoi-madonny"
                                                     target="_blank">

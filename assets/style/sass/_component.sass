@@ -102,3 +102,26 @@ footer
 .accordion-button::after 
     margin-left: 10px
 
+/* test animation */
+
+.bi-brightness-high-fill-1 svg path:nth-child(1)
+    opacity: 0
+    transform: translate(54px,12px)
+.bi-moon-fill-1 svg path:nth-child(2)
+    opacity: 0
+    transform: translate(-54px,12px)
+.bi-moon-fill-1 svg path
+    transition: transform 1s,opacity .7s
+.bi-brightness-high-fill-1 svg path
+    transition: transform 1s,opacity .7s
+.dropdown-menu-black
+    background: var(--bg-white) !important
+    color: var(--text-white) !important
+.dropdown-item:focus, .dropdown-item:hover
+    background: var(--bg-indigo)
+    color: var(--text-dark)
+.dropdown-item
+    color: var(--text-dark)
+    border-radius: 9px
+    padding: 5px 10px
+    line-height: 2

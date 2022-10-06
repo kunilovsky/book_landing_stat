@@ -84,6 +84,9 @@ section {
   left: -50px !important;
   -webkit-box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
 }
 
 .dropdown-item {
@@ -285,6 +288,50 @@ footer {
 
 .accordion-button::after {
   margin-left: 10px;
+}
+
+/* test animation */
+.bi-brightness-high-fill-1 svg path:nth-child(1) {
+  opacity: 0;
+  -webkit-transform: translate(54px, 12px);
+          transform: translate(54px, 12px);
+}
+
+.bi-moon-fill-1 svg path:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translate(-54px, 12px);
+          transform: translate(-54px, 12px);
+}
+
+.bi-moon-fill-1 svg path {
+  -webkit-transition: opacity .7s,-webkit-transform 1s;
+  transition: opacity .7s,-webkit-transform 1s;
+  transition: transform 1s,opacity .7s;
+  transition: transform 1s,opacity .7s,-webkit-transform 1s;
+}
+
+.bi-brightness-high-fill-1 svg path {
+  -webkit-transition: opacity .7s,-webkit-transform 1s;
+  transition: opacity .7s,-webkit-transform 1s;
+  transition: transform 1s,opacity .7s;
+  transition: transform 1s,opacity .7s,-webkit-transform 1s;
+}
+
+.dropdown-menu-black {
+  background: var(--bg-white) !important;
+  color: var(--text-white) !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background: var(--bg-indigo);
+  color: var(--text-dark);
+}
+
+.dropdown-item {
+  color: var(--text-dark);
+  border-radius: 9px;
+  padding: 5px 10px;
+  line-height: 2;
 }
 
 /* Element */
