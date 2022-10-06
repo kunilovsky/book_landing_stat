@@ -334,6 +334,10 @@ footer {
   line-height: 2;
 }
 
+.btn {
+  border: none;
+}
+
 /* Element */
 .avatar {
   width: 150px;
