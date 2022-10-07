@@ -48,10 +48,12 @@ footer
     font-size: 18px
 .accordion-button
     font-size: 14px
+    justify-content: end
+    color: var(--text-dark)
+.accordion-button::after 
+    margin-left: 10px
 .accordion
-    background-color: var(--text-white) 
-.accordion-item
-    background-color: var(--text-white) 
+    background: var(--bg-white) !important
 .shop-logo
     width: 60px
     height: auto
@@ -80,17 +82,6 @@ footer
     padding: 10px 20px
     border-radius: 5px
     text-decoration: none
-.accordion-button:not(.collapsed)
-    background-color: var(--text-white) 
-    box-shadow: none
-.accordion-item
-    background: var(--text-white) !important
-.accordion-button 
-    justify-content: end
-.accordion-flush
-    background: var(--text-white) !important
-    background-color: var(--text-white) !important
-
 @media (max-width:480px)
     .book-card-price p
         font-size: 14px
@@ -107,11 +98,7 @@ footer
         font-size: 10px
     .book-card-price a
         font-size: 12px
-.accordion-button::after 
-    margin-left: 10px
-
 /* test animation */
-
 .bi-brightness-high-fill-1 svg path:nth-child(1)
     opacity: 0
     transform: translate(54px,12px)
@@ -135,3 +122,9 @@ footer
     line-height: 2
 .btn
     border: none
+.accordion-button:not(.collapsed)::after
+    background-image: none !important
+    content: url('https://api.iconify.design/ep/arrow-up.svg?color=%23767676&width=20&height=20')
+.accordion-button::after
+    background-image: none !important
+    content: url('https://api.iconify.design/ep/arrow-down.svg?color=%23767676&width=20&height=20')
