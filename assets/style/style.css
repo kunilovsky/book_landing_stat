@@ -191,6 +191,8 @@ footer {
 
 .private {
   color: #fff;
+  background: #000;
+  border: none;
 }
 
 /* NEW BOOK CARD */
