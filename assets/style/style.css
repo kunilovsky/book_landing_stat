@@ -170,6 +170,7 @@ section {
   }
   section {
     margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -388,7 +389,7 @@ footer {
 
 @media (max-width: 480px) {
   .avatar {
-    width: 120px;
+    width: 100px;
     border-radius: 1000px;
     margin-bottom: 15px;
   }
