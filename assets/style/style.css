@@ -405,16 +405,18 @@ footer {
 }
 
 .book__body__avtor {
-  font-size: 12px;
+  font-size: 10px;
   color: var(--text-dark);
 }
 
 .book__body__avtor a {
   text-decoration: none;
-  padding: 3px 8px;
-  color: var(--text-white);
-  background: var(--icon-mode);
-  border-radius: 5px;
+  padding: 2px 4px;
+  color: var(--text-dark);
+  background: color --bg-indigo;
+  border-radius: 10px;
+  text-decoration: underline;
+  font-weight: 400;
 }
 
 .book__footer p {
