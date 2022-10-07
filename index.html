@@ -48,9 +48,6 @@
                         </svg>
                         </svg>
                     </button>
-                    <!-- <button class="btn btn-mode" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i id="mode" class="bi bi-brightness-high-fill"></i>
-                    </button> -->
                     <ul id="drop-black" class="dropdown-menu text-start">
                         <div class="text-center"><strong style="font-size: 12px;text-align: center;">Внешний
                                 вид</strong></div>
@@ -65,16 +62,16 @@
                 <div class="collapse navbar-collapse" id="mobile">
                     <ul class="navbar-nav me-auto ms-auto text-center mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">О нас</a>
+                            <a class="nav-link navlink active" aria-current="page" href="#about">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#books">Наши книги</a>
+                            <a id="l-close" class="nav-link navlink" href="#books">Наши книги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#rev">Отзывы</a>
+                            <a id="l-close" class="nav-link navlink" href="#rev">Отзывы</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacts">Контакты</a>
+                            <a id="l-close" class="nav-link navlink" href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -84,8 +81,8 @@
     <!-- /Header -->
     <!-- Main -->
     <main>
-        <section id="about">
-            <h2>
+        <section>
+            <h2 id="about">
                 О нас
             </h2>
             <div class="container blocks">
@@ -1193,6 +1190,17 @@
     <!-- JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/mode.js"></script>
+    <script>
+        const navItem = document.getElementsByClassName('navlink');
+        const menuShow = document.querySelector('.navbar-collapse');
+
+        for (let navlink of navItem) {
+            navlink.addEventListener('click', function () {
+                menuShow.classList.remove('show');
+            });
+        }
+    </script>
+    <!-- <script> -->
 </body>
 
 </html>
