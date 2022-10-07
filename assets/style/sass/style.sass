@@ -58,13 +58,21 @@ section
     padding-left: 15px
     padding-right: 15px
     border-radius: 10px
-.dropdown-item
-    border: 4px
+
 .active-mode::before
     content: "\F633"
     color: #2b67ff
     margin-right: 10px
     font-size: 16px
+    position: absolute
+    top: 10px
+    left: 10px
+.dropdown-item
+    padding-left: 15px
+    position: relative
+    width: 100%
+    border: 4px
+
 .bi-book-half
     color: var(--red-logo) !important
 .btn-mode
@@ -92,7 +100,7 @@ section
         border-radius: 1000px
         margin-bottom: 15px
     .dropdown-menu
-        margin-left: -60px !important
+        margin-left: -100px !important
 .book
     &__head img
         height: 250px
@@ -128,4 +136,3 @@ section
     .contact a
         font-size: 10px
         display: block
-

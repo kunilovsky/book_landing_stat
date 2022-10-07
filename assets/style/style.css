@@ -90,15 +90,21 @@ section {
   border-radius: 10px;
 }
 
-.dropdown-item {
-  border: 4px;
-}
-
 .active-mode::before {
   content: "\F633";
   color: #2b67ff;
   margin-right: 10px;
   font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.dropdown-item {
+  padding-left: 15px;
+  position: relative;
+  width: 100%;
+  border: 4px;
 }
 
 .bi-book-half {
@@ -171,6 +177,12 @@ section {
   }
   .price {
     font-size: 14px;
+  }
+  .navbar-brand {
+    font-size: 16px;
+  }
+  .bi-book-half {
+    font-size: 16px;
   }
 }
 
@@ -264,13 +276,16 @@ footer {
   text-decoration: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .dropdown {
     position: absolute;
-    top: 12px;
+    top: 8px;
     right: 15px;
     bottom: auto;
     left: auto;
+  }
+  .navbar-nav {
+    padding-right: 200px;
   }
 }
 
@@ -338,7 +353,7 @@ footer {
 .dropdown-item {
   color: var(--text-dark);
   border-radius: 9px;
-  padding: 5px 10px;
+  padding: 5px 30px;
   line-height: 2;
 }
 
@@ -377,7 +392,7 @@ footer {
     margin-bottom: 15px;
   }
   .dropdown-menu {
-    margin-left: -60px !important;
+    margin-left: -100px !important;
   }
 }
 

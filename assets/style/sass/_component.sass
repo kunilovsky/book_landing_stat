@@ -29,6 +29,10 @@
         font-size: 12px
     .price
         font-size: 14px
+    .navbar-brand
+        font-size: 16px
+    .bi-book-half
+        font-size: 16px
 .btn
     background: var(--bg-indigo)
     color: var(--text-white)
@@ -52,7 +56,7 @@ footer
     font-size: 14px
     justify-content: end
     color: var(--text-dark)
-.accordion-button::after 
+.accordion-button::after
     margin-left: 10px
 .accordion
     background: var(--bg-white) !important
@@ -84,13 +88,15 @@ footer
     padding: 10px 20px
     border-radius: 5px
     text-decoration: none
-@media (min-width:1024px)
+@media (min-width:991px)
     .dropdown
         position: absolute
-        top: 12px
+        top: 8px
         right: 15px
         bottom: auto
         left: auto
+    .navbar-nav
+        padding-right: 200px
 @media (max-width:480px)
     .book-card-price p
         font-size: 14px
@@ -127,7 +133,7 @@ footer
 .dropdown-item
     color: var(--text-dark)
     border-radius: 9px
-    padding: 5px 10px
+    padding: 5px 30px
     line-height: 2
 .btn
     border: none
@@ -138,6 +144,6 @@ footer
 .accordion-button::after
     background-image: none !important
     content: url('https://api.iconify.design/ep/arrow-down.svg?color=%23767676&width=20&height=20')
-.modal 
+.modal
     background: var(--bg-white)
     color: var(--text-dark)

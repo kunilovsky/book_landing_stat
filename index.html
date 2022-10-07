@@ -27,17 +27,17 @@
     <!-- Header -->
     <header class="sticky-top">
         <nav id="burger" class="navbar navbar-expand-lg p-0">
-            <div class="container blocks__header p-3 position-relative">
+            <div class="container blocks__header p-2 position-relative">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile"
                     aria-controls="mobile" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand me-0" href="#">
                     <i class="bi bi-book-half"></i>
                     Novakamskaya
                 </a>
                 <div class="dropdown">
-                    <button id="mode" class="btn btn-mode bi-brightness-high-fill-1" type="button"
+                    <button id="mode" class="pe-0 ps-0 btn btn-mode bi-brightness-high-fill-1" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                             class="bi bi-moon-fill" viewBox="0 0 16 16">
@@ -51,11 +51,14 @@
                     <ul id="drop-black" class="dropdown-menu text-start">
                         <div class="text-center"><strong style="font-size: 12px;text-align: center;">Внешний
                                 вид</strong></div>
-                        <li><a id="light-theme" class="dropdown-item bi active-mode" style="font-size: 14px;" href="
+                        <li><a onclick="createElementsInside()" id="light-theme" class="dropdown-item bi active-mode"
+                                style="font-size: 14px;" href="
                                 #">Светлая тема</a></li>
-                        <li><a id="dark-theme" class="dropdown-item bi" style="font-size:14px;" href="#">Темная
+                        <li><a onclick="createElementsInside()" id="dark-theme" class="dropdown-item bi"
+                                style="font-size:14px;" href="#">Темная
                                 тема</a></li>
-                        <li><a id="user-theme" class="dropdown-item bi" style="font-size: 14px;" href="#">Как в
+                        <li><a onclick="createElementsInside()" id="user-theme" class="dropdown-item bi"
+                                style="font-size: 14px;" href="#">Как в
                                 системе</a></li>
                     </ul>
                 </div>
@@ -694,7 +697,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <div class="blocks contact text-center text-md-start">
+                        <div class="blocks contact text-center text-md-start ">
                             <a href="https://t.me/novakamskaya"><i class="bi bi-telegram"></i> Новости</a>
                             <a href="https://t.me/novakamskaya_chat"><i class="bi bi-telegram"></i> Чат</a>
                         </div>

@@ -28,7 +28,7 @@ function getAppliedMode(userPreference) {
   return 'dark';
 }
 
-if (theme === 'dark') document.body.classList.add('light');
+if (theme === 'dark') document.body.classList.add('dark');
 //if (theme != 'dark') document.body.classList.remove('dark');
 //if (theme === 'dark') darkTheme.classList.add('active-mode');
 if (theme != 'dark') lightTheme.classList.add('active-mode');
