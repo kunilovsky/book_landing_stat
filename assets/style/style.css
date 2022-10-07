@@ -366,11 +366,13 @@ footer {
 .accordion-button:not(.collapsed)::after {
   background-image: none !important;
   content: url("https://api.iconify.design/ep/arrow-up.svg?color=%23767676&width=20&height=20");
-  -webkit-transform: rotate(0.5turn);
-          transform: rotate(0.5turn);
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
 }
 
 .accordion-button::after {
+  -webkit-transition: 1s !important;
+  transition: 1s !important;
   background-image: none !important;
   content: url("https://api.iconify.design/ep/arrow-down.svg?color=%23767676&width=20&height=20");
 }
