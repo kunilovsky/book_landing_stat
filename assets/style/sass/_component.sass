@@ -20,15 +20,21 @@
     color: var(--text-white)
 @media (max-width:480px)
     h1
-        font-size: 25px
+        font-size: 22px
         font-weight: 700
     section
+        margin-top: 20px
+        margin-bottom: 20px
         margin-left: 10px
         margin-right: 10px
     p
         font-size: 12px
     .price
         font-size: 14px
+    .navbar-brand
+        font-size: 16px
+    .bi-book-half
+        font-size: 16px
 .btn
     background: var(--bg-indigo)
     color: var(--text-white)
@@ -41,3 +47,106 @@ footer
     font-weight: 700
 .private
     color: #fff
+    background: #000
+    border: none
+
+/* NEW BOOK CARD */
+.book-card-price p
+    font-weight: 400
+    font-size: 18px
+.accordion-button
+    font-size: 14px
+    justify-content: end
+    color: var(--text-dark)
+.accordion-button::after
+    margin-left: 10px
+.accordion
+    background: var(--bg-white) !important
+.shop-logo
+    width: 60px
+    height: auto
+    max-height: 25px
+    margin-right: 10px
+.book-card-img
+    width: 25%
+.book-card-img img
+    width: 100%
+.book-card-description
+    color: var(--text-dark)
+    width: 75%
+    font-size: 14px
+    font-weight: 400
+.book-card-meta
+    color: var(--text-dark)
+    font-size: 14px
+.book-card-meta span
+    margin-right: 15px
+.book-card-price a
+    display: flex
+    margin-top: 10px
+    justify-content: space-between
+    background: var(--bg-indigo)
+    color: var(--text-dark)
+    padding: 10px 20px
+    border-radius: 5px
+    text-decoration: none
+@media (min-width:991px)
+    .dropdown
+        position: absolute
+        top: 8px
+        right: 15px
+        bottom: auto
+        left: auto
+    .navbar-nav
+        padding-right: 200px
+@media (max-width:480px)
+    .book-card-price p
+        font-size: 14px
+        font-weight: 700
+    .book-card-img
+        text-align: center
+        width: 100%
+    .book-card-img img
+        width: 80%
+    .book-card-description
+        width: 100%
+        font-size: 14px
+    .book-card-meta
+        font-size: 10px
+    .book-card-price a
+        font-size: 12px
+/* test animation */
+.bi-brightness-high-fill-1 svg path:nth-child(1)
+    opacity: 0
+    transform: translate(54px,12px)
+.bi-moon-fill-1 svg path:nth-child(2)
+    opacity: 0
+    transform: translate(-54px,12px)
+.bi-moon-fill-1 svg path
+    transition: transform 1s,opacity .7s
+.bi-brightness-high-fill-1 svg path
+    transition: transform 1s,opacity .7s
+.dropdown-menu-black
+    background: var(--bg-white) !important
+    color: var(--text-white) !important
+.dropdown-item:focus, .dropdown-item:hover
+    background: var(--bg-indigo)
+    color: var(--text-dark)
+.dropdown-item
+    color: var(--text-dark)
+    border-radius: 9px
+    padding: 5px 30px
+    line-height: 2
+.btn
+    border: none
+.accordion-button:not(.collapsed)::after
+    background-image: none !important
+    content: url('https://api.iconify.design/ep/arrow-up.svg?color=%23767676&width=20&height=20')
+    transform: rotate(1turn)
+.accordion-button::after
+    transition: 1s !important
+    background-image: none !important
+    content: url('https://api.iconify.design/ep/arrow-down.svg?color=%23767676&width=20&height=20')
+.modal
+    background: var(--bg-white)
+    color: var(--text-dark)
