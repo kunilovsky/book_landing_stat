@@ -1,78 +1,74 @@
-const lightTheme = document.getElementById('light-theme');
-const darkTheme = document.getElementById('dark-theme');
-const user = document.getElementById('user-theme');
-let theme = window.localStorage.getItem('theme');
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-const icons = document.getElementById('mode');
+/* Задаем переменную для запроса ключ-значение в локальное хранилище пользователя */
+
+const memoryTheme = localStorage.getItem('memoryTheme');
+
+/* Создаем 2 основных режима темы: Светлая и Темная, Дополнительно - дефолт системы */
+
+const darkThemes = document.getElementById('darkThemes');
+const lightThemes = document.getElementById('lightThemes');
+const systemThemes = document.getElementById('systemThemes');
+
+const icons = document.querySelector('opendrop');
 const burger = document.getElementById('burger');
 const drop = document.getElementById('drop-black');
 
-function getUserPreference() {
-  return localStorage.getItem('theme') || 'system';
-}
-function saveUserPreference(userPreference) {
-  localStorage.setItem('theme', userPreference);
-}
+/* Сохраняем выбор в локальное хранилище */
 
-function getAppliedMode(userPreference) {
-  if (userPreference === 'light') {
-    return 'light';
-  }
-  if (userPreference === 'dark') {
-    return 'dark';
-  }
-  // system
+lightThemes.addEventListener('click', () => {
+  window.localStorage.setItem('memoryTheme', 'light');
+});
+darkThemes.addEventListener('click', () => {
+  window.localStorage.setItem('memoryTheme', 'dark');
+});
+
+/* Тема по дефолту системы с записью в локальное хранилище */
+
+systemThemes.addEventListener('click', () => {
   if (matchMedia('(prefers-color-scheme: light)').matches) {
-    return 'light';
-  }
-  return 'dark';
-}
-
-if (theme === 'dark') document.body.classList.add('light');
-//if (theme != 'dark') document.body.classList.remove('dark');
-//if (theme === 'dark') darkTheme.classList.add('active-mode');
-if (theme != 'dark') lightTheme.classList.add('active-mode');
-
-darkTheme.addEventListener('click', () => {
-  document.body.classList.add('dark');
-  icons.classList.remove('bi-brightness-high-fill-1');
-  icons.classList.add('bi-moon-fill-1');
-  darkTheme.classList.add('active-mode');
-  lightTheme.classList.remove('active-mode');
-  user.classList.remove('active-mode');
-  burger.classList.add('navbar-dark');
-  drop.classList.add('dropdown-menu-black');
-});
-lightTheme.addEventListener('click', () => {
-  document.body.classList.remove('dark');
-  icons.classList.remove('bi-moon-fill-1');
-  icons.classList.add('bi-brightness-high-fill-1');
-  lightTheme.classList.add('active-mode');
-  darkTheme.classList.remove('active-mode');
-  user.classList.remove('active-mode');
-  burger.classList.remove('navbar-dark');
-  drop.classList.remove('dropdown-menu-black');
-});
-user.addEventListener('click', () => {
-  user.classList.add('active-mode');
-  lightTheme.classList.remove('active-mode');
-  darkTheme.classList.remove('active-mode');
-  if (prefersDarkScheme.matches) {
-    document.body.classList.add('dark');
-    icons.classList.add('bi-moon-fill-1');
-    burger.classList.add('navbar-dark');
-  } else {
     document.body.classList.remove('dark');
-    icons.classList.remove('bi-moon-fill-1');
-    icons.classList.add('bi-brightness-high-fill-1');
-    burger.classList.remove('navbar-dark');
-    drop.classList.remove('dropdown-menu-black');
+  } else {
+    window.localStorage.setItem('memoryTheme', 'dark');
+  }
+  if (matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark');
+  } else {
+    window.localStorage.setItem('memoryTheme', 'light');
   }
 });
 
-function getUserPreference() {
-  return localStorage.getItem('theme') || 'system';
+/* Проверяем локальное хранилище посетителя при входе на сайт */
+if (memoryTheme === 'dark') {
+  document.body.classList.add('dark');
 }
-function saveUserPreference(userPreference) {
-  localStorage.setItem('theme', userPreference);
+
+/* Выбор темы */
+
+lightThemes.addEventListener('click', () => {
+  document.body.classList.add('light');
+  if (document.body.classList.contains('dark')) {
+    document.body.classList.remove('dark');
+  }
+});
+
+darkThemes.addEventListener('click', () => {
+  document.body.classList.add('dark');
+  if (document.body.classList.contains('light')) {
+    document.body.classList.remove('light');
+  }
+});
+
+/* Вывод в консоль */
+
+const themeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+function printLog(isDark) {
+  const theme = isDark ? 'темная' : 'светлая';
+
+  console.log(`В системе используется ${theme} тема`);
 }
+
+printLog(themeMediaQuery.matches);
+
+themeMediaQuery.addEventListener('change', function (event) {
+  printLog(event.matches);
+});

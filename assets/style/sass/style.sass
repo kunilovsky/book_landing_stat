@@ -1,8 +1,6 @@
+@import 'colors'
 body
     font-family: 'Montserrat', sans-serif
-@import 'colors'
-/* Global */
-body
     --text-white: #{$white}
     --icon-mode: #{$icon-mode}
     --text-dark: #{$dark}
@@ -12,7 +10,19 @@ body
     --bg-indigo: #{$bg-indigo}
     --red-logo: #{$red}
     background-color: var(--bg-grey-light)
-.dark
+
+/* Global */
+body.light
+    --text-white: #{$white}
+    --icon-mode: #{$icon-mode}
+    --text-dark: #{$dark}
+    --bg-grey-light: #{$grey-light}
+    --bg-white: #{$bg-white}
+    --bg-blue-dark: #{$blue-dark}
+    --bg-indigo: #{$bg-indigo}
+    --red-logo: #{$red}
+    background-color: var(--bg-grey-light)
+body.dark
     --text-white: #{$dark_mode-text-white}
     --icon-mode-dark: #{$icon-mode-dark}
     --text-dark: #{$dark_mode-text-dark}
@@ -21,6 +31,7 @@ body
     --bg-blue-dark: #{$dark_mode-blue-dark}
     --bg-indigo: #{$dark_mode-bg-indigo}
     --rel-logo-dark: #{$red-dark}
+
 
 h1, h2, h3, h4, h5, h6, p
     color: var(--text-dark)
