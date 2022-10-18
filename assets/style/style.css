@@ -375,8 +375,8 @@ footer {
 .accordion-button:not(.collapsed)::after {
   background-image: none !important;
   content: url("https://api.iconify.design/ep/arrow-up.svg?color=%23767676&width=20&height=20");
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
 }
 
 .accordion-button::after {
@@ -406,6 +406,9 @@ footer {
   }
   .dropdown-menu {
     margin-left: -100px !important;
+  }
+  .rev__img img {
+    width: 60px;
   }
 }
 
